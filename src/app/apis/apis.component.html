@@ -1,0 +1,34 @@
+<!--*ngFor="let item of data"-->
+<body>
+    <div class="cards-grid" >
+        
+        <div class="flip-card" >
+            <div class="flip-card-inner" >
+                <div class="flip-card-front" *ngFor="let item of data" style="background-image: url('https://rickandmortyapi.com/api/character/avatar/1.jpeg');">
+
+                </div>
+                <div class="flip-card-back" *ngFor="let item of data">
+                    <h2>Rick Sanchez</h2>
+                    <h3>{{item.species}}</h3>
+                    <h3>{{item.status}}</h3>
+                    Richard Daniel "Rick" Sánchez de la Dimensión C-137 es un viejo científico alcohólico que acostumbra hablar de manera vulgar y entre eructos aparte de hablar de forma bastante inapropiada constantemente, la mayoría de las veces tiene un rastro de saliva e incluso se cree que es licor en la boca.
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner" >
+                <div class="flip-card-front" *ngFor="let item of data" style="background-image: url({{item.image}});">
+
+                </div>
+                <div class="flip-card-back" *ngFor="let item of data">
+                    <h2>{{item.name}}</h2>
+                    <h3>{{item.species}}</h3>
+                    <h3>{{item.status}}</h3>
+                    Johnny Depp (C-500A) es un actor estadounidense. Apareció en el episodio " Rixty Minutes " como el mejor amigo de Jerry Smith (C-500A) .
+                    Está basado en el actor de la vida real del mismo nombre .</div>
+            </div>
+        </div>
+
+    </div>
+</body>
